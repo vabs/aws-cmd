@@ -1,0 +1,734 @@
+[2013-04-06 14:54:02] INFO  (GetBalance.java: 51) - Your account balance: $0.00
+[2013-04-06 14:57:03] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 14:57:03] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 14:57:03] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 14:57:03] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 14:57:03] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 14:57:05] INFO  (LoadHITs.java: 166) - 
+WARNING: It appears you do not have enough funds in your account
+[2013-04-06 14:57:05] INFO  (LoadHITs.java: 167) - The HITs you are trying to create will create a total liability of $0.125
+[2013-04-06 14:57:05] INFO  (LoadHITs.java: 168) - You current account balance is $0.000
+[2013-04-06 14:57:05] INFO  (LoadHITs.java: 170) - 
+To continue this operation, please press ENTER (or press Ctrl+C to abort and fund your account first): 
+[2013-04-06 14:57:55] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 14:57:55] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 14:57:55] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 14:57:55] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 14:57:55] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 14:57:56] INFO  (LoadHITs.java: 166) - 
+WARNING: It appears you do not have enough funds in your account
+[2013-04-06 14:57:56] INFO  (LoadHITs.java: 167) - The HITs you are trying to create will create a total liability of $0.025
+[2013-04-06 14:57:56] INFO  (LoadHITs.java: 168) - You current account balance is $0.000
+[2013-04-06 14:57:56] INFO  (LoadHITs.java: 170) - 
+To continue this operation, please press ENTER (or press Ctrl+C to abort and fund your account first): 
+[2013-04-06 15:06:28] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 15:06:28] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 15:06:28] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 15:06:28] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 15:06:28] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 15:06:29] ERROR (LoadHITs.java: 133) - Error loading HITs: This request must be made over a secure channel. You must use 'https' rather than 'http'.
+com.amazonaws.mturk.service.exception.InternalServiceException: This request must be made over a secure channel. You must use 'https' rather than 'http'.
+	at com.amazonaws.mturk.service.axis.AWSService.executeRequestMessage(AWSService.java:243)
+	at com.amazonaws.mturk.filter.FinalFilter.execute(FinalFilter.java:38)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.execute(ErrorProcessingFilter.java:46)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.filter.RetryFilter.execute(RetryFilter.java:115)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.sendMessage(CLTExceptionFilter.java:77)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.execute(CLTExceptionFilter.java:62)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequests(FilteredAWSService.java:172)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:152)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:116)
+	at com.amazonaws.mturk.service.axis.RequesterServiceRaw.getAccountBalance(RequesterServiceRaw.java:1193)
+	at com.amazonaws.mturk.service.axis.RequesterService.getAccountBalance(RequesterService.java:922)
+	at com.amazonaws.mturk.cmd.LoadHITs.checkFunds(LoadHITs.java:150)
+	at com.amazonaws.mturk.cmd.LoadHITs.loadHITs(LoadHITs.java:226)
+	at com.amazonaws.mturk.cmd.LoadHITs.runCommand(LoadHITs.java:120)
+	at com.amazonaws.mturk.cmd.AbstractCmd.run(AbstractCmd.java:148)
+	at com.amazonaws.mturk.cmd.LoadHITs.main(LoadHITs.java:55)
+Caused by: This request must be made over a secure channel. You must use 'https' rather than 'http'.
+	at org.apache.axis.message.SOAPFaultBuilder.createFault(SOAPFaultBuilder.java:222)
+	at org.apache.axis.message.SOAPFaultBuilder.endElement(SOAPFaultBuilder.java:129)
+	at org.apache.axis.encoding.DeserializationContext.endElement(DeserializationContext.java:1087)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at org.apache.axis.encoding.DeserializationContext.parse(DeserializationContext.java:227)
+	at org.apache.axis.SOAPPart.getAsSOAPEnvelope(SOAPPart.java:696)
+	at org.apache.axis.Message.getSOAPEnvelope(Message.java:435)
+	at org.apache.axis.handlers.soap.MustUnderstandChecker.invoke(MustUnderstandChecker.java:62)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:206)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.amazonaws.mturk.requester.AWSMechanicalTurkRequesterBindingStub.getAccountBalance(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.amazonaws.mturk.service.axis.AWSService.executeRequestMessage(AWSService.java:220)
+	... 18 more
+[2013-04-06 15:06:51] ERROR (GetBalance.java: 44) - An error occurred while fetching your balance: This request must be made over a secure channel. You must use 'https' rather than 'http'.
+com.amazonaws.mturk.service.exception.InternalServiceException: This request must be made over a secure channel. You must use 'https' rather than 'http'.
+	at com.amazonaws.mturk.service.axis.AWSService.executeRequestMessage(AWSService.java:243)
+	at com.amazonaws.mturk.filter.FinalFilter.execute(FinalFilter.java:38)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.execute(ErrorProcessingFilter.java:46)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.filter.RetryFilter.execute(RetryFilter.java:115)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.sendMessage(CLTExceptionFilter.java:77)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.execute(CLTExceptionFilter.java:62)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequests(FilteredAWSService.java:172)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:152)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:116)
+	at com.amazonaws.mturk.service.axis.RequesterServiceRaw.getAccountBalance(RequesterServiceRaw.java:1193)
+	at com.amazonaws.mturk.service.axis.RequesterService.getAccountBalance(RequesterService.java:922)
+	at com.amazonaws.mturk.cmd.GetBalance.getBalance(GetBalance.java:50)
+	at com.amazonaws.mturk.cmd.GetBalance.runCommand(GetBalance.java:41)
+	at com.amazonaws.mturk.cmd.AbstractCmd.run(AbstractCmd.java:148)
+	at com.amazonaws.mturk.cmd.GetBalance.main(GetBalance.java:28)
+Caused by: This request must be made over a secure channel. You must use 'https' rather than 'http'.
+	at org.apache.axis.message.SOAPFaultBuilder.createFault(SOAPFaultBuilder.java:222)
+	at org.apache.axis.message.SOAPFaultBuilder.endElement(SOAPFaultBuilder.java:129)
+	at org.apache.axis.encoding.DeserializationContext.endElement(DeserializationContext.java:1087)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at org.apache.axis.encoding.DeserializationContext.parse(DeserializationContext.java:227)
+	at org.apache.axis.SOAPPart.getAsSOAPEnvelope(SOAPPart.java:696)
+	at org.apache.axis.Message.getSOAPEnvelope(Message.java:435)
+	at org.apache.axis.handlers.soap.MustUnderstandChecker.invoke(MustUnderstandChecker.java:62)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:206)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.amazonaws.mturk.requester.AWSMechanicalTurkRequesterBindingStub.getAccountBalance(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.amazonaws.mturk.service.axis.AWSService.executeRequestMessage(AWSService.java:220)
+	... 17 more
+[2013-04-06 15:07:18] INFO  (GetBalance.java: 51) - Your account balance: $10000.00
+[2013-04-06 15:07:56] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 15:07:56] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 15:07:56] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 15:07:56] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 15:07:56] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 15:07:58] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 15:07:58] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 15:07:58 EDT 2013
+[2013-04-06 15:07:58] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 15:07:58] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2H6HOVR14IXO6X3E7A5CZA6XBNQ87I
+[2013-04-06 15:07:58] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2Y4VHVKCJ0152XP9O00KTW61GC686J
+[2013-04-06 15:07:58] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2BFFCD45XCEX58ASYD9N6TGPCPBXZ6
+[2013-04-06 15:07:58] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2YG5PQJQ9OPP3SUCZFIXJ8KCWOMY0L
+[2013-04-06 15:07:59] INFO  (RequesterService.java: 1548) - Created HIT 5: HITId=2DM0SPW1INMLYT89OWEAE6BFU4H3GO
+[2013-04-06 15:07:59] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '27J7Q67051QOUI967MHC4XMGINWYE6' here: 
+[2013-04-06 15:07:59] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=27J7Q67051QOUI967MHC4XMGINWYE6
+
+[2013-04-06 15:07:59] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 15:07:59 EDT 2013
+[2013-04-06 15:07:59] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 15:07:59] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 15:07:59] INFO  (LoadHITs.java: 243) -   Successfully loaded 5 HITs.
+[2013-04-06 15:09:31] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 15:09:31] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 15:09:31] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 15:09:31] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 15:09:31] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 15:09:32] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 15:09:32] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 15:09:32 EDT 2013
+[2013-04-06 15:09:32] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 15:09:32] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2WQ06UFBNFSZYP3K82WSZ6NG94U3HN
+[2013-04-06 15:09:32] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '27J7Q67051QOUI967MHC4XMGINWYE6' here: 
+[2013-04-06 15:09:32] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=27J7Q67051QOUI967MHC4XMGINWYE6
+
+[2013-04-06 15:09:32] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 15:09:32 EDT 2013
+[2013-04-06 15:09:32] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 15:09:32] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 15:09:32] INFO  (LoadHITs.java: 243) -   Successfully loaded 1 HITs.
+[2013-04-06 15:13:37] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 15:13:37] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 15:13:37] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 15:13:37] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 15:13:37] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 15:13:39] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 15:13:39] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 15:13:39 EDT 2013
+[2013-04-06 15:13:39] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 15:13:39] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=204JUNU8LZ6VPVYAW2ZDBJ3VMWY3JS
+[2013-04-06 15:13:39] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2CZVKCJ011K6PZ1CEDHW918NCVW8A9
+[2013-04-06 15:13:39] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2X2PEIB9BAWPAHFUVYMXXD3M1GSY1O
+[2013-04-06 15:13:39] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '27J7Q67051QOUI967MHC4XMGINWYE6' here: 
+[2013-04-06 15:13:39] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=27J7Q67051QOUI967MHC4XMGINWYE6
+
+[2013-04-06 15:13:39] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 15:13:39 EDT 2013
+[2013-04-06 15:13:39] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 15:13:39] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 15:13:39] INFO  (LoadHITs.java: 243) -   Successfully loaded 3 HITs.
+[2013-04-06 15:32:32] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 15:32:32] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 15:32:32] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 15:32:32] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 15:32:32] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 15:32:34] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 15:32:34] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 15:32:34 EDT 2013
+[2013-04-06 15:32:34] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 15:32:34] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2KVHJHP4BDDOYZGDWLO903G3DWXY56
+[2013-04-06 15:32:34] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2K6U3K4F0OHSDMJ9NQBO5L92P3E10R
+[2013-04-06 15:32:34] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2DG2AOO2GMMIYJ6LVL3M9IAAAHG66V
+[2013-04-06 15:32:34] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '27J7Q67051QOUI967MHC4XMGINWYE6' here: 
+[2013-04-06 15:32:34] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=27J7Q67051QOUI967MHC4XMGINWYE6
+
+[2013-04-06 15:32:34] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 15:32:34 EDT 2013
+[2013-04-06 15:32:34] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 15:32:34] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 15:32:34] INFO  (LoadHITs.java: 243) -   Successfully loaded 3 HITs.
+[2013-04-06 16:04:24] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2013-04-06 16:04:24] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 16:04:25] INFO  (GetResults.java: 162) - Retrieved HIT 1/3, 2KVHJHP4BDDOYZGDWLO903G3DWXY56
+[2013-04-06 16:04:25] INFO  (GetResults.java: 162) - Retrieved HIT 2/3, 2K6U3K4F0OHSDMJ9NQBO5L92P3E10R
+[2013-04-06 16:04:26] INFO  (GetResults.java: 162) - Retrieved HIT 3/3, 2DG2AOO2GMMIYJ6LVL3M9IAAAHG66V
+[2013-04-06 16:04:26] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2013-04-06 16:04:26] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2013-04-06 16:04:26] INFO  (GetResults.java: 134) - Assignments completed: 1/3 (33%)
+[2013-04-06 16:04:26] INFO  (GetResults.java: 137) -          Time elapsed: 0:31:52 (h:mm:ss)
+[2013-04-06 16:04:26] INFO  (GetResults.java: 142) -   Average submit time: 148.0 seconds
+[2013-04-06 16:20:08] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 16:20:08] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 16:20:08] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 16:20:08] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 16:20:08] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 16:20:09] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 16:20:09] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 16:20:09 EDT 2013
+[2013-04-06 16:20:09] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 16:20:10] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=21RRJ85OZIZIZHSFUFFOT5EWXMN9X3
+[2013-04-06 16:20:10] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=26QJVCNHMVHZ27156UB2A4J7H9S209
+[2013-04-06 16:20:10] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2J9CJK63ZVE7ZMIPZB1QCJL5ZSH9Y9
+[2013-04-06 16:20:10] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-06 16:20:10] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-06 16:20:10] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 16:20:10 EDT 2013
+[2013-04-06 16:20:10] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 16:20:10] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 16:20:10] INFO  (LoadHITs.java: 243) -   Successfully loaded 3 HITs.
+[2013-04-06 16:21:32] ERROR (LoadHITs.java: 85) - Missing: -input [path to input file -- ie. c:\mturk\helloworld.input]
+[2013-04-06 16:31:44] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 16:31:44] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 16:31:44] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 16:31:44] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 16:31:44] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 16:31:45] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 16:31:45] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 16:31:45 EDT 2013
+[2013-04-06 16:31:45] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 16:31:46] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 1 (55): [6,58] The reference to entity "id" must end with the ';' delimiter.
+[2013-04-06 16:31:46] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 2 (52): [6,58] The reference to entity "id" must end with the ';' delimiter.
+[2013-04-06 16:31:46] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 3 (31): [6,58] The reference to entity "id" must end with the ';' delimiter.
+[2013-04-06 16:31:46] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 4 (56): [6,58] The reference to entity "id" must end with the ';' delimiter.
+[2013-04-06 16:31:46] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 16:31:46 EDT 2013
+[2013-04-06 16:31:46] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 16:31:46] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 16:31:46] INFO  (LoadHITs.java: 243) -   Successfully loaded 0 HITs.
+[2013-04-06 16:31:46] ERROR (LoadHITs.java: 254) -   Failed to load 4 HITs.
+[2013-04-06 16:33:43] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 16:33:43] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 16:33:43] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 16:33:43] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 16:33:43] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 16:33:45] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 16:33:45] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 16:33:45 EDT 2013
+[2013-04-06 16:33:45] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 16:33:45] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 1 (55): [6,58] The reference to entity "id" must end with the ';' delimiter.
+[2013-04-06 16:33:45] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 2 (52): [6,58] The reference to entity "id" must end with the ';' delimiter.
+[2013-04-06 16:33:45] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 3 (31): [6,58] The reference to entity "id" must end with the ';' delimiter.
+[2013-04-06 16:33:45] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 4 (56): [6,58] The reference to entity "id" must end with the ';' delimiter.
+[2013-04-06 16:33:45] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 16:33:45 EDT 2013
+[2013-04-06 16:33:45] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 16:33:45] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 16:33:45] INFO  (LoadHITs.java: 243) -   Successfully loaded 0 HITs.
+[2013-04-06 16:33:45] ERROR (LoadHITs.java: 254) -   Failed to load 4 HITs.
+[2013-04-06 16:35:04] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 16:35:04] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 16:35:04] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 16:35:04] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 16:35:04] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 16:35:05] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 16:35:05] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 16:35:05 EDT 2013
+[2013-04-06 16:35:05] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 16:35:05] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 1 (55): [6,56] The entity name must immediately follow the '&' in the entity reference.
+[2013-04-06 16:35:05] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 2 (52): [6,56] The entity name must immediately follow the '&' in the entity reference.
+[2013-04-06 16:35:06] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 3 (31): [6,56] The entity name must immediately follow the '&' in the entity reference.
+[2013-04-06 16:35:06] ERROR (RequesterService.java: 1570) - [ERROR] Error creating HIT 4 (56): [6,56] The entity name must immediately follow the '&' in the entity reference.
+[2013-04-06 16:35:06] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 16:35:06 EDT 2013
+[2013-04-06 16:35:06] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 16:35:06] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 16:35:06] INFO  (LoadHITs.java: 243) -   Successfully loaded 0 HITs.
+[2013-04-06 16:35:06] ERROR (LoadHITs.java: 254) -   Failed to load 4 HITs.
+[2013-04-06 16:36:46] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 16:36:46] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 16:36:46] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 16:36:46] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 16:36:46] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 16:36:47] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 16:36:47] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 16:36:47 EDT 2013
+[2013-04-06 16:36:47] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 16:36:48] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2S5VP3TVOK5YXEN630HERZFYYH325U
+[2013-04-06 16:36:48] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2KOXBAT2D5NUGINK8JRJJ5TYUCE26A
+[2013-04-06 16:36:48] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2CZ8MZ9O9Z6OEZHRFS8HURLFYPQA1R
+[2013-04-06 16:36:48] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2YQMZ9O9Z6K0MU4F4A8RULFQ8DPB24
+[2013-04-06 16:36:48] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-06 16:36:48] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-06 16:36:48] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 16:36:48 EDT 2013
+[2013-04-06 16:36:48] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 16:36:48] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 16:36:48] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
+[2013-04-06 16:38:18] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-06 16:38:18] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-06 16:38:18] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-06 16:38:18] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-06 16:38:18] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-06 16:38:19] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-06 16:38:19] INFO  (LoadHITs.java: 231) -   Start time: Sat Apr 06 16:38:19 EDT 2013
+[2013-04-06 16:38:19] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-06 16:38:20] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2U6BDDP8PJWOC8VD2F23T39Z808G5R
+[2013-04-06 16:38:20] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=26UGJ2D21O30NSZ5OIGSL2KYMEN7DN
+[2013-04-06 16:38:20] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=230KMN9U8P92L3B11Q93VUYIUPLDUW
+[2013-04-06 16:38:20] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2EKQ45UUKQO2YI016GJ8RG018WUDVL
+[2013-04-06 16:38:20] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-06 16:38:20] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-06 16:38:20] INFO  (LoadHITs.java: 239) -   End time: Sat Apr 06 16:38:20 EDT 2013
+[2013-04-06 16:38:20] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-06 16:38:20] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-06 16:38:20] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
+[2013-04-26 16:22:41] INFO  (AbstractCmd.java: 224) - PLEASE READ THIS CAREFULLY
+
+You are about to delete ALL your HITs from Mechanical Turk.
+[2013-04-26 16:22:41] INFO  (AbstractCmd.java: 225) - To confirm this operation, please press ENTER (or press Ctrl+C to abort): 
+[2013-04-26 16:22:44] INFO  (ResetAccount.java: 109) - --- Starting to reset account (4 HITs) ---
+[2013-04-26 16:22:44] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 136) - [29UXKNQY2RCN21L407UHU0KUQZE2RU] Successfully deleted HIT (1/4)
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 136) - [2TEY2AOO2GMQWB6TLJJCP6IAIRG55K] Successfully deleted HIT (2/4)
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 136) - [2U425L8I9NZ0OCW4BH54TW7TGVWTJK] Successfully deleted HIT (3/4)
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 136) - [2NKNJQ2172ZDRLZBGDCCYEBU9S6YQ5] Successfully deleted HIT (4/4)
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 116) - --- Finished resetting account ---
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 117) -   4 HITs have been deleted or were deleted previously.
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 118) -   0 HITs failed to delete.
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 119) -   0 HITs could not be deleted because they are currently being worked on.
+[2013-04-26 16:22:45] INFO  (ResetAccount.java: 123) -   0 HITs are left in your account.
+[2013-04-26 16:25:08] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-26 16:25:08] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-26 16:25:08] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-26 16:25:08] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-26 16:25:08] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-26 16:25:09] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-26 16:25:09] INFO  (LoadHITs.java: 231) -   Start time: Fri Apr 26 16:25:09 EDT 2013
+[2013-04-26 16:25:10] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 16:25:10] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=21CDD8XMB3Q7RUIGBNKO9T4E3MDFQW
+[2013-04-26 16:25:10] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2E4B3Q39Z0BACO6BYX5VVTVRSA9KVX
+[2013-04-26 16:25:10] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=24RU8P9Y38T0ES08XNPIP0JTIA7HYZ
+[2013-04-26 16:25:10] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2YATLB3L0FBNRD6GO7ARHVE5ZJBKW7
+[2013-04-26 16:25:10] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-26 16:25:10] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-26 16:25:10] INFO  (LoadHITs.java: 239) -   End time: Fri Apr 26 16:25:10 EDT 2013
+[2013-04-26 16:25:10] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-26 16:25:10] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-26 16:25:10] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
+[2013-04-26 16:26:24] INFO  (AbstractCmd.java: 224) - PLEASE READ THIS CAREFULLY
+
+You are about to delete ALL your HITs from Mechanical Turk.
+[2013-04-26 16:26:24] INFO  (AbstractCmd.java: 225) - To confirm this operation, please press ENTER (or press Ctrl+C to abort): 
+[2013-04-26 16:26:28] INFO  (ResetAccount.java: 109) - --- Starting to reset account (4 HITs) ---
+[2013-04-26 16:26:28] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 16:26:28] INFO  (ResetAccount.java: 136) - [24RU8P9Y38T0ES08XNPIP0JTIA7HYZ] Successfully deleted HIT (1/4)
+[2013-04-26 16:26:28] INFO  (ResetAccount.java: 136) - [21CDD8XMB3Q7RUIGBNKO9T4E3MDFQW] Successfully deleted HIT (2/4)
+[2013-04-26 16:26:29] INFO  (ResetAccount.java: 136) - [2E4B3Q39Z0BACO6BYX5VVTVRSA9KVX] Successfully deleted HIT (3/4)
+[2013-04-26 16:26:29] INFO  (ResetAccount.java: 136) - [2YATLB3L0FBNRD6GO7ARHVE5ZJBKW7] Successfully deleted HIT (4/4)
+[2013-04-26 16:26:29] INFO  (ResetAccount.java: 116) - --- Finished resetting account ---
+[2013-04-26 16:26:29] INFO  (ResetAccount.java: 117) -   4 HITs have been deleted or were deleted previously.
+[2013-04-26 16:26:29] INFO  (ResetAccount.java: 118) -   0 HITs failed to delete.
+[2013-04-26 16:26:29] INFO  (ResetAccount.java: 119) -   0 HITs could not be deleted because they are currently being worked on.
+[2013-04-26 16:26:29] INFO  (ResetAccount.java: 123) -   0 HITs are left in your account.
+[2013-04-26 16:28:09] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-26 16:28:09] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-26 16:28:09] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-26 16:28:09] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-26 16:28:09] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-26 16:28:10] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-26 16:28:10] INFO  (LoadHITs.java: 231) -   Start time: Fri Apr 26 16:28:10 EDT 2013
+[2013-04-26 16:28:10] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 16:28:10] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2YXL42J1LY5CT2KCRT9GIKHD90IP4R
+[2013-04-26 16:28:10] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2VVD2AC9KSS3DSF7VXWUXKQO6A7I0S
+[2013-04-26 16:28:11] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=214N9U8P9Y3CBRE2NWJU1IM0RNUFW0
+[2013-04-26 16:28:11] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2JAEIUUU00OU2FS9NBJ8V2U2E2KTTW
+[2013-04-26 16:28:11] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-26 16:28:11] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-26 16:28:11] INFO  (LoadHITs.java: 239) -   End time: Fri Apr 26 16:28:11 EDT 2013
+[2013-04-26 16:28:11] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-26 16:28:11] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-26 16:28:11] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
+[2013-04-26 16:31:53] INFO  (AbstractCmd.java: 224) - PLEASE READ THIS CAREFULLY
+
+You are about to delete ALL your HITs from Mechanical Turk.
+[2013-04-26 16:31:53] INFO  (AbstractCmd.java: 225) - To confirm this operation, please press ENTER (or press Ctrl+C to abort): 
+[2013-04-26 16:31:56] INFO  (ResetAccount.java: 109) - --- Starting to reset account (4 HITs) ---
+[2013-04-26 16:31:56] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 16:31:56] INFO  (ResetAccount.java: 136) - [214N9U8P9Y3CBRE2NWJU1IM0RNUFW0] Successfully deleted HIT (1/4)
+[2013-04-26 16:31:56] INFO  (ResetAccount.java: 136) - [2JAEIUUU00OU2FS9NBJ8V2U2E2KTTW] Successfully deleted HIT (2/4)
+[2013-04-26 16:31:57] INFO  (ResetAccount.java: 136) - [2VVD2AC9KSS3DSF7VXWUXKQO6A7I0S] Successfully deleted HIT (3/4)
+[2013-04-26 16:31:57] INFO  (ResetAccount.java: 136) - [2YXL42J1LY5CT2KCRT9GIKHD90IP4R] Successfully deleted HIT (4/4)
+[2013-04-26 16:31:57] INFO  (ResetAccount.java: 116) - --- Finished resetting account ---
+[2013-04-26 16:31:57] INFO  (ResetAccount.java: 117) -   4 HITs have been deleted or were deleted previously.
+[2013-04-26 16:31:57] INFO  (ResetAccount.java: 118) -   0 HITs failed to delete.
+[2013-04-26 16:31:57] INFO  (ResetAccount.java: 119) -   0 HITs could not be deleted because they are currently being worked on.
+[2013-04-26 16:31:57] INFO  (ResetAccount.java: 123) -   0 HITs are left in your account.
+[2013-04-26 16:32:07] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-26 16:32:07] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-26 16:32:07] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-26 16:32:07] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-26 16:32:07] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-26 16:32:08] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-26 16:32:08] INFO  (LoadHITs.java: 231) -   Start time: Fri Apr 26 16:32:08 EDT 2013
+[2013-04-26 16:32:09] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 16:32:09] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2WTNFSVGULF7R0A1BG71IS3N6H3M8Z
+[2013-04-26 16:32:09] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2P3Z6R70G5RDQ8QO8O57ZSSTVSWP9N
+[2013-04-26 16:32:09] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2I0NMHGYQ4J755TBG8DFIOYYQNLM9O
+[2013-04-26 16:32:09] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2W36VCPWZ9RRVR0T0UJ7VN3D1AEPA2
+[2013-04-26 16:32:09] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-26 16:32:09] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-26 16:32:09] INFO  (LoadHITs.java: 239) -   End time: Fri Apr 26 16:32:09 EDT 2013
+[2013-04-26 16:32:09] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-26 16:32:09] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-26 16:32:09] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
+[2013-04-26 16:50:08] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2013-04-26 16:50:08] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 16:50:09] INFO  (GetResults.java: 162) - Retrieved HIT 1/4, 2WTNFSVGULF7R0A1BG71IS3N6H3M8Z
+[2013-04-26 16:50:09] INFO  (GetResults.java: 162) - Retrieved HIT 2/4, 2P3Z6R70G5RDQ8QO8O57ZSSTVSWP9N
+[2013-04-26 16:50:10] INFO  (GetResults.java: 162) - Retrieved HIT 3/4, 2I0NMHGYQ4J755TBG8DFIOYYQNLM9O
+[2013-04-26 16:50:10] INFO  (GetResults.java: 162) - Retrieved HIT 4/4, 2W36VCPWZ9RRVR0T0UJ7VN3D1AEPA2
+[2013-04-26 16:50:10] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2013-04-26 16:50:10] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2013-04-26 16:50:10] INFO  (GetResults.java: 134) - Assignments completed: 2/4 (50%)
+[2013-04-26 16:50:10] INFO  (GetResults.java: 137) -          Time elapsed: 0:18:01 (h:mm:ss)
+[2013-04-26 16:50:10] INFO  (GetResults.java: 142) -   Average submit time: 175.0 seconds
+[2013-04-26 16:53:01] INFO  (ReviewResults.java: 134) - [2CCYEPLSP75O3HO1OWFAKQEQWMBXRD] Assignment successfully approved
+[2013-04-26 16:53:01] INFO  (ReviewResults.java: 134) - [2D15SW6NG1FWLIGSO4PF4FZS0OMWIF] Assignment successfully approved
+[2013-04-26 16:53:01] INFO  (ReviewResults.java: 145) - 
+[2013-04-26 16:53:01] INFO  (ReviewResults.java: 146) - Assignments approved: 2/2 (100%)
+[2013-04-26 16:53:01] INFO  (ReviewResults.java: 147) - Assignments rejected: 0/2 (0%)
+[2013-04-26 16:53:01] INFO  (ReviewResults.java: 148) - Errors occurred: 0
+[2013-04-26 16:54:32] ERROR (ReviewResults.java: 138) - Could not process assignment [2CCYEPLSP75O3HO1OWFAKQEQWMBXRD], Error #1 for RequestId: 923e7a03-c9e2-451a-9f79-efc732a94b22 - AWS.MechanicalTurk.InvalidAssignmentState: This operation can be called with a status of: Submitted (1367009672146 s)
+com.amazonaws.mturk.service.exception.InvalidStateException: Error #1 for RequestId: 923e7a03-c9e2-451a-9f79-efc732a94b22 - AWS.MechanicalTurk.InvalidAssignmentState: This operation can be called with a status of: Submitted (1367009672146 s)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.processErrors(ErrorProcessingFilter.java:114)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.execute(ErrorProcessingFilter.java:48)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.filter.RetryFilter.execute(RetryFilter.java:115)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.sendMessage(CLTExceptionFilter.java:77)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.execute(CLTExceptionFilter.java:62)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequests(FilteredAWSService.java:172)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:152)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:116)
+	at com.amazonaws.mturk.service.axis.RequesterServiceRaw.approveAssignment(RequesterServiceRaw.java:703)
+	at com.amazonaws.mturk.cmd.ReviewResults.reviewAssignments(ReviewResults.java:120)
+	at com.amazonaws.mturk.cmd.ReviewResults.runCommand(ReviewResults.java:69)
+	at com.amazonaws.mturk.cmd.AbstractCmd.run(AbstractCmd.java:148)
+	at com.amazonaws.mturk.cmd.ReviewResults.main(ReviewResults.java:45)
+[2013-04-26 16:54:32] ERROR (ReviewResults.java: 138) - Could not process assignment [2D15SW6NG1FWLIGSO4PF4FZS0OMWIF], Error #1 for RequestId: 8e0951d5-300a-447d-8fba-91bed6ce9c99 - AWS.MechanicalTurk.InvalidAssignmentState: This operation can be called with a status of: Submitted (1367009672315 s)
+com.amazonaws.mturk.service.exception.InvalidStateException: Error #1 for RequestId: 8e0951d5-300a-447d-8fba-91bed6ce9c99 - AWS.MechanicalTurk.InvalidAssignmentState: This operation can be called with a status of: Submitted (1367009672315 s)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.processErrors(ErrorProcessingFilter.java:114)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.execute(ErrorProcessingFilter.java:48)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.filter.RetryFilter.execute(RetryFilter.java:115)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.sendMessage(CLTExceptionFilter.java:77)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.execute(CLTExceptionFilter.java:62)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequests(FilteredAWSService.java:172)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:152)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:116)
+	at com.amazonaws.mturk.service.axis.RequesterServiceRaw.approveAssignment(RequesterServiceRaw.java:703)
+	at com.amazonaws.mturk.cmd.ReviewResults.reviewAssignments(ReviewResults.java:120)
+	at com.amazonaws.mturk.cmd.ReviewResults.runCommand(ReviewResults.java:69)
+	at com.amazonaws.mturk.cmd.AbstractCmd.run(AbstractCmd.java:148)
+	at com.amazonaws.mturk.cmd.ReviewResults.main(ReviewResults.java:45)
+[2013-04-26 16:54:32] INFO  (ReviewResults.java: 145) - 
+[2013-04-26 16:54:32] INFO  (ReviewResults.java: 146) - Assignments approved: 0/2 (0%)
+[2013-04-26 16:54:32] INFO  (ReviewResults.java: 147) - Assignments rejected: 0/2 (0%)
+[2013-04-26 16:54:32] INFO  (ReviewResults.java: 148) - Errors occurred: 2
+[2013-04-26 16:55:40] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2013-04-26 16:55:40] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 16:55:41] INFO  (GetResults.java: 162) - Retrieved HIT 1/4, 2WTNFSVGULF7R0A1BG71IS3N6H3M8Z
+[2013-04-26 16:55:41] INFO  (GetResults.java: 162) - Retrieved HIT 2/4, 2P3Z6R70G5RDQ8QO8O57ZSSTVSWP9N
+[2013-04-26 16:55:41] INFO  (GetResults.java: 162) - Retrieved HIT 3/4, 2I0NMHGYQ4J755TBG8DFIOYYQNLM9O
+[2013-04-26 16:55:42] INFO  (GetResults.java: 162) - Retrieved HIT 4/4, 2W36VCPWZ9RRVR0T0UJ7VN3D1AEPA2
+[2013-04-26 16:55:42] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2013-04-26 16:55:42] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2013-04-26 16:55:42] INFO  (GetResults.java: 134) - Assignments completed: 2/4 (50%)
+[2013-04-26 16:55:42] INFO  (GetResults.java: 137) -          Time elapsed: 0:23:33 (h:mm:ss)
+[2013-04-26 16:55:42] INFO  (GetResults.java: 142) -   Average submit time: 175.0 seconds
+[2013-04-26 16:56:10] ERROR (ReviewResults.java: 138) - Could not process assignment [2CCYEPLSP75O3HO1OWFAKQEQWMBXRD], Error #1 for RequestId: c5a89cb1-7dc3-4840-b380-75fdc8d5aa14 - AWS.MechanicalTurk.InvalidAssignmentState: This operation can be called with a status of: Submitted (1367009770551 s)
+com.amazonaws.mturk.service.exception.InvalidStateException: Error #1 for RequestId: c5a89cb1-7dc3-4840-b380-75fdc8d5aa14 - AWS.MechanicalTurk.InvalidAssignmentState: This operation can be called with a status of: Submitted (1367009770551 s)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.processErrors(ErrorProcessingFilter.java:114)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.execute(ErrorProcessingFilter.java:48)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.filter.RetryFilter.execute(RetryFilter.java:115)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.sendMessage(CLTExceptionFilter.java:77)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.execute(CLTExceptionFilter.java:62)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequests(FilteredAWSService.java:172)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:152)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:116)
+	at com.amazonaws.mturk.service.axis.RequesterServiceRaw.approveAssignment(RequesterServiceRaw.java:703)
+	at com.amazonaws.mturk.cmd.ReviewResults.reviewAssignments(ReviewResults.java:120)
+	at com.amazonaws.mturk.cmd.ReviewResults.runCommand(ReviewResults.java:69)
+	at com.amazonaws.mturk.cmd.AbstractCmd.run(AbstractCmd.java:148)
+	at com.amazonaws.mturk.cmd.ReviewResults.main(ReviewResults.java:45)
+[2013-04-26 16:56:10] ERROR (ReviewResults.java: 138) - Could not process assignment [2D15SW6NG1FWLIGSO4PF4FZS0OMWIF], Error #1 for RequestId: 38c0cc69-5c90-4e8b-93bb-7b3d1b450366 - AWS.MechanicalTurk.InvalidAssignmentState: This operation can be called with a status of: Submitted (1367009770702 s)
+com.amazonaws.mturk.service.exception.InvalidStateException: Error #1 for RequestId: 38c0cc69-5c90-4e8b-93bb-7b3d1b450366 - AWS.MechanicalTurk.InvalidAssignmentState: This operation can be called with a status of: Submitted (1367009770702 s)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.processErrors(ErrorProcessingFilter.java:114)
+	at com.amazonaws.mturk.filter.ErrorProcessingFilter.execute(ErrorProcessingFilter.java:48)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.filter.RetryFilter.execute(RetryFilter.java:115)
+	at com.amazonaws.mturk.filter.Filter.passMessage(Filter.java:56)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.sendMessage(CLTExceptionFilter.java:77)
+	at com.amazonaws.mturk.util.CLTExceptionFilter.execute(CLTExceptionFilter.java:62)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequests(FilteredAWSService.java:172)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:152)
+	at com.amazonaws.mturk.service.axis.FilteredAWSService.executeRequest(FilteredAWSService.java:116)
+	at com.amazonaws.mturk.service.axis.RequesterServiceRaw.approveAssignment(RequesterServiceRaw.java:703)
+	at com.amazonaws.mturk.cmd.ReviewResults.reviewAssignments(ReviewResults.java:120)
+	at com.amazonaws.mturk.cmd.ReviewResults.runCommand(ReviewResults.java:69)
+	at com.amazonaws.mturk.cmd.AbstractCmd.run(AbstractCmd.java:148)
+	at com.amazonaws.mturk.cmd.ReviewResults.main(ReviewResults.java:45)
+[2013-04-26 16:56:10] INFO  (ReviewResults.java: 145) - 
+[2013-04-26 16:56:10] INFO  (ReviewResults.java: 146) - Assignments approved: 0/2 (0%)
+[2013-04-26 16:56:10] INFO  (ReviewResults.java: 147) - Assignments rejected: 0/2 (0%)
+[2013-04-26 16:56:10] INFO  (ReviewResults.java: 148) - Errors occurred: 2
+[2013-04-26 17:13:00] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2013-04-26 17:13:00] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 17:13:01] INFO  (GetResults.java: 162) - Retrieved HIT 1/4, 2WTNFSVGULF7R0A1BG71IS3N6H3M8Z
+[2013-04-26 17:13:01] INFO  (GetResults.java: 162) - Retrieved HIT 2/4, 2P3Z6R70G5RDQ8QO8O57ZSSTVSWP9N
+[2013-04-26 17:13:01] INFO  (GetResults.java: 162) - Retrieved HIT 3/4, 2I0NMHGYQ4J755TBG8DFIOYYQNLM9O
+[2013-04-26 17:13:01] INFO  (GetResults.java: 162) - Retrieved HIT 4/4, 2W36VCPWZ9RRVR0T0UJ7VN3D1AEPA2
+[2013-04-26 17:13:01] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2013-04-26 17:13:01] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2013-04-26 17:13:01] INFO  (GetResults.java: 134) - Assignments completed: 2/4 (50%)
+[2013-04-26 17:13:01] INFO  (GetResults.java: 137) -          Time elapsed: 0:40:52 (h:mm:ss)
+[2013-04-26 17:13:01] INFO  (GetResults.java: 142) -   Average submit time: 175.0 seconds
+[2013-04-26 17:13:24] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2013-04-26 17:13:24] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 17:13:25] INFO  (GetResults.java: 162) - Retrieved HIT 1/4, 2WTNFSVGULF7R0A1BG71IS3N6H3M8Z
+[2013-04-26 17:13:25] INFO  (GetResults.java: 162) - Retrieved HIT 2/4, 2P3Z6R70G5RDQ8QO8O57ZSSTVSWP9N
+[2013-04-26 17:13:25] INFO  (GetResults.java: 162) - Retrieved HIT 3/4, 2I0NMHGYQ4J755TBG8DFIOYYQNLM9O
+[2013-04-26 17:13:25] INFO  (GetResults.java: 162) - Retrieved HIT 4/4, 2W36VCPWZ9RRVR0T0UJ7VN3D1AEPA2
+[2013-04-26 17:13:25] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2013-04-26 17:13:25] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2013-04-26 17:13:25] INFO  (GetResults.java: 134) - Assignments completed: 2/4 (50%)
+[2013-04-26 17:13:25] INFO  (GetResults.java: 137) -          Time elapsed: 0:41:16 (h:mm:ss)
+[2013-04-26 17:13:25] INFO  (GetResults.java: 142) -   Average submit time: 175.0 seconds
+[2013-04-26 17:14:08] INFO  (DeleteHITs.java: 67) - --- Starting to delete HITs ---
+[2013-04-26 17:14:08] INFO  (AbstractCmd.java: 224) - You are about to delete 4 HITs.
+[2013-04-26 17:14:08] INFO  (AbstractCmd.java: 225) - To confirm this operation, please press ENTER (or press Ctrl+C to abort): 
+[2013-04-26 17:14:11] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 17:14:13] INFO  (DeleteHITs.java: 102) - [2WTNFSVGULF7R0A1BG71IS3N6H3M8Z] HIT already deleted. Skipping HIT (1/4)
+[2013-04-26 17:14:13] INFO  (DeleteHITs.java: 102) - [2I0NMHGYQ4J755TBG8DFIOYYQNLM9O] HIT already deleted. Skipping HIT (2/4)
+[2013-04-26 17:14:13] INFO  (DeleteHITs.java: 102) - [2P3Z6R70G5RDQ8QO8O57ZSSTVSWP9N] Successfully deleted HIT (3/4)
+[2013-04-26 17:14:13] INFO  (DeleteHITs.java: 102) - [2W36VCPWZ9RRVR0T0UJ7VN3D1AEPA2] Successfully deleted HIT (4/4)
+[2013-04-26 17:14:13] INFO  (DeleteHITs.java: 74) - --- Finished to delete HITs ---
+[2013-04-26 17:14:13] INFO  (DeleteHITs.java: 75) -   4 HITs have been deleted or were deleted previously.
+[2013-04-26 17:14:13] INFO  (DeleteHITs.java: 76) -   0 errors occured.
+[2013-04-26 17:14:40] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-26 17:14:40] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-26 17:14:40] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-26 17:14:40] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-26 17:14:40] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-26 17:14:41] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-26 17:14:41] INFO  (LoadHITs.java: 231) -   Start time: Fri Apr 26 17:14:41 EDT 2013
+[2013-04-26 17:14:41] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 17:14:41] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2T46IAA2SEIYCPI5TJBKD4II02DNNP
+[2013-04-26 17:14:41] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2DKGTP9RA7S9EHJBERJOI70JUB6RW8
+[2013-04-26 17:14:42] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2VYDHDM25L8MRIH1BA5Z9OE4YQSPFG
+[2013-04-26 17:14:42] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2YWCWA6X3YOGUAIHUYBXSTINQCINO4
+[2013-04-26 17:14:42] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-26 17:14:42] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-26 17:14:42] INFO  (LoadHITs.java: 239) -   End time: Fri Apr 26 17:14:42 EDT 2013
+[2013-04-26 17:14:42] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-26 17:14:42] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-26 17:14:42] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
+[2013-04-26 17:32:26] INFO  (AbstractCmd.java: 224) - PLEASE READ THIS CAREFULLY
+
+You are about to delete ALL your HITs from Mechanical Turk.
+[2013-04-26 17:32:26] INFO  (AbstractCmd.java: 225) - To confirm this operation, please press ENTER (or press Ctrl+C to abort): 
+[2013-04-26 17:32:29] INFO  (ResetAccount.java: 109) - --- Starting to reset account (4 HITs) ---
+[2013-04-26 17:32:29] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 17:32:29] INFO  (ResetAccount.java: 136) - [2DKGTP9RA7S9EHJBERJOI70JUB6RW8] Successfully deleted HIT (1/4)
+[2013-04-26 17:32:30] INFO  (ResetAccount.java: 136) - [2VYDHDM25L8MRIH1BA5Z9OE4YQSPFG] Successfully deleted HIT (2/4)
+[2013-04-26 17:32:30] INFO  (ResetAccount.java: 136) - [2YWCWA6X3YOGUAIHUYBXSTINQCINO4] Successfully deleted HIT (3/4)
+[2013-04-26 17:32:30] INFO  (ResetAccount.java: 116) - --- Finished resetting account ---
+[2013-04-26 17:32:30] INFO  (ResetAccount.java: 117) -   3 HITs have been deleted or were deleted previously.
+[2013-04-26 17:32:30] INFO  (ResetAccount.java: 118) -   0 HITs failed to delete.
+[2013-04-26 17:32:30] INFO  (ResetAccount.java: 119) -   1 HITs could not be deleted because they are currently being worked on.
+[2013-04-26 17:32:30] INFO  (ResetAccount.java: 123) -   1 HITs are left in your account.
+[2013-04-26 17:33:16] INFO  (AbstractCmd.java: 224) - PLEASE READ THIS CAREFULLY
+
+You are about to delete ALL your HITs from Mechanical Turk.
+[2013-04-26 17:33:16] INFO  (AbstractCmd.java: 225) - To confirm this operation, please press ENTER (or press Ctrl+C to abort): 
+[2013-04-26 17:33:18] INFO  (ResetAccount.java: 109) - --- Starting to reset account (1 HITs) ---
+[2013-04-26 17:33:18] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 17:33:18] INFO  (ResetAccount.java: 136) - [2T46IAA2SEIYCPI5TJBKD4II02DNNP] Successfully deleted HIT (1/1)
+[2013-04-26 17:33:18] INFO  (ResetAccount.java: 116) - --- Finished resetting account ---
+[2013-04-26 17:33:18] INFO  (ResetAccount.java: 117) -   1 HITs have been deleted or were deleted previously.
+[2013-04-26 17:33:18] INFO  (ResetAccount.java: 118) -   0 HITs failed to delete.
+[2013-04-26 17:33:18] INFO  (ResetAccount.java: 119) -   0 HITs could not be deleted because they are currently being worked on.
+[2013-04-26 17:33:18] INFO  (ResetAccount.java: 123) -   0 HITs are left in your account.
+[2013-04-26 17:33:31] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-26 17:33:31] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-26 17:33:31] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-26 17:33:31] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-26 17:33:31] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-26 17:33:32] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-26 17:33:32] INFO  (LoadHITs.java: 231) -   Start time: Fri Apr 26 17:33:32 EDT 2013
+[2013-04-26 17:33:32] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 17:33:32] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2YQMZ9O9Z6K0MU4F4A8RULFQ8I9B2Y
+[2013-04-26 17:33:32] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2J11LY58B72B4V0LKD8D46YF0P18TO
+[2013-04-26 17:33:32] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2ECLRGNTBJ3Q48FAKIYN92KHJ388UF
+[2013-04-26 17:33:32] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2YXL42J1LY5CT2KCRT9GIKHD90K4P8
+[2013-04-26 17:33:32] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-26 17:33:32] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-26 17:33:32] INFO  (LoadHITs.java: 239) -   End time: Fri Apr 26 17:33:32 EDT 2013
+[2013-04-26 17:33:32] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-26 17:33:32] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-26 17:33:32] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
+[2013-04-26 17:35:44] INFO  (GetResults.java: 119) - --[Retrieving Results]----------
+[2013-04-26 17:35:44] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 17:35:45] INFO  (GetResults.java: 162) - Retrieved HIT 1/4, 2YQMZ9O9Z6K0MU4F4A8RULFQ8I9B2Y
+[2013-04-26 17:35:45] INFO  (GetResults.java: 162) - Retrieved HIT 2/4, 2J11LY58B72B4V0LKD8D46YF0P18TO
+[2013-04-26 17:35:45] INFO  (GetResults.java: 162) - Retrieved HIT 3/4, 2ECLRGNTBJ3Q48FAKIYN92KHJ388UF
+[2013-04-26 17:35:45] INFO  (GetResults.java: 162) - Retrieved HIT 4/4, 2YXL42J1LY5CT2KCRT9GIKHD90K4P8
+[2013-04-26 17:35:45] INFO  (GetResults.java: 123) - --[Done Retrieving Results]----------
+[2013-04-26 17:35:45] INFO  (GetResults.java: 130) - 
+Results have been written to file '../samples/external_hit/external_hit.results'.
+
+[2013-04-26 17:35:45] INFO  (GetResults.java: 134) - Assignments completed: 1/12 (8%)
+[2013-04-26 17:35:45] INFO  (GetResults.java: 137) -          Time elapsed: 0:02:13 (h:mm:ss)
+[2013-04-26 17:35:45] INFO  (GetResults.java: 142) -   Average submit time: 92.0 seconds
+[2013-04-26 17:36:02] INFO  (ReviewResults.java: 134) - [2P30HFL42J1PG0QGCVYM3IGFLKXM1M] Assignment successfully approved
+[2013-04-26 17:36:02] INFO  (ReviewResults.java: 145) - 
+[2013-04-26 17:36:02] INFO  (ReviewResults.java: 146) - Assignments approved: 1/1 (100%)
+[2013-04-26 17:36:02] INFO  (ReviewResults.java: 147) - Assignments rejected: 0/1 (0%)
+[2013-04-26 17:36:02] INFO  (ReviewResults.java: 148) - Errors occurred: 0
+[2013-04-26 18:45:16] INFO  (AbstractCmd.java: 224) - PLEASE READ THIS CAREFULLY
+
+You are about to delete ALL your HITs from Mechanical Turk.
+[2013-04-26 18:45:16] INFO  (AbstractCmd.java: 225) - To confirm this operation, please press ENTER (or press Ctrl+C to abort): 
+[2013-04-26 18:45:18] INFO  (ResetAccount.java: 109) - --- Starting to reset account (4 HITs) ---
+[2013-04-26 18:45:19] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 18:45:19] INFO  (ResetAccount.java: 136) - [2ECLRGNTBJ3Q48FAKIYN92KHJ388UF] Successfully deleted HIT (1/4)
+[2013-04-26 18:45:19] INFO  (ResetAccount.java: 136) - [2YQMZ9O9Z6K0MU4F4A8RULFQ8I9B2Y] Successfully deleted HIT (2/4)
+[2013-04-26 18:45:19] INFO  (ResetAccount.java: 136) - [2J11LY58B72B4V0LKD8D46YF0P18TO] Successfully deleted HIT (3/4)
+[2013-04-26 18:45:20] INFO  (ResetAccount.java: 136) - [2YXL42J1LY5CT2KCRT9GIKHD90K4P8] Successfully deleted HIT (4/4)
+[2013-04-26 18:45:20] INFO  (ResetAccount.java: 116) - --- Finished resetting account ---
+[2013-04-26 18:45:20] INFO  (ResetAccount.java: 117) -   4 HITs have been deleted or were deleted previously.
+[2013-04-26 18:45:20] INFO  (ResetAccount.java: 118) -   0 HITs failed to delete.
+[2013-04-26 18:45:20] INFO  (ResetAccount.java: 119) -   0 HITs could not be deleted because they are currently being worked on.
+[2013-04-26 18:45:20] INFO  (ResetAccount.java: 123) -   0 HITs are left in your account.
+[2013-04-26 18:45:29] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-26 18:45:29] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-26 18:45:29] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-26 18:45:29] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-26 18:45:29] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-26 18:45:30] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-26 18:45:30] INFO  (LoadHITs.java: 231) -   Start time: Fri Apr 26 18:45:30 EDT 2013
+[2013-04-26 18:45:30] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 18:45:30] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2UQXMB3Q39Z4T1CYTZK4HVST3L7TII
+[2013-04-26 18:45:30] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2QQJHSTLB3L4X61ENH2JHJRE38STHP
+[2013-04-26 18:45:30] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2DGB49F9SSSLFWJOTGJT8H5FGDRWS3
+[2013-04-26 18:45:30] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2FQTNKIMZSM92AZX7HD0SGVFBC9ZC2
+[2013-04-26 18:45:30] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-26 18:45:30] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-26 18:45:30] INFO  (LoadHITs.java: 239) -   End time: Fri Apr 26 18:45:30 EDT 2013
+[2013-04-26 18:45:30] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-26 18:45:30] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-26 18:45:30] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
+[2013-04-26 18:56:21] INFO  (LoadHITs.java: 193) - --[Initializing]----------
+[2013-04-26 18:56:21] INFO  (LoadHITs.java: 194) -  Input: ../samples/external_hit/external_hit.input
+[2013-04-26 18:56:21] INFO  (LoadHITs.java: 195) -  Properties: ../samples/external_hit/external_hit.properties
+[2013-04-26 18:56:21] INFO  (LoadHITs.java: 196) -  Question File: ../samples/external_hit/external_hit.question
+[2013-04-26 18:56:21] INFO  (LoadHITs.java: 202) -  Preview mode disabled
+[2013-04-26 18:56:22] INFO  (LoadHITs.java: 229) - --[Loading HITs]----------
+[2013-04-26 18:56:22] INFO  (LoadHITs.java: 231) -   Start time: Fri Apr 26 18:56:22 EDT 2013
+[2013-04-26 18:56:22] DEBUG (WorkQueue.java: 53) - Instantiating work queue with 2 threads
+[2013-04-26 18:56:23] INFO  (RequesterService.java: 1548) - Created HIT 1: HITId=2FQE4BLYHVI8MJA7PEL8GNEZ05XU0F
+[2013-04-26 18:56:23] INFO  (RequesterService.java: 1548) - Created HIT 2: HITId=2ECYT3DHJHP8T8VPLXP8USX95X3U1I
+[2013-04-26 18:56:23] INFO  (RequesterService.java: 1548) - Created HIT 3: HITId=2IFERSQV66RP7C0Y8AMWDVKIEWBB3B
+[2013-04-26 18:56:23] INFO  (RequesterService.java: 1548) - Created HIT 4: HITId=2776AUC26DGAP8J28ORFN0COSW7B4W
+[2013-04-26 18:56:23] INFO  (RequesterService.java: 1592) - 
+You may see your HIT(s) with HITTypeId '2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9' here: 
+[2013-04-26 18:56:23] INFO  (RequesterService.java: 1593) - 
+  https://workersandbox.mturk.com/mturk/preview?groupId=2YTJPPSI2KYI7GAUCYBLP6WJ3BBKQ9
+
+[2013-04-26 18:56:23] INFO  (LoadHITs.java: 239) -   End time: Fri Apr 26 18:56:23 EDT 2013
+[2013-04-26 18:56:23] INFO  (LoadHITs.java: 240) - --[Done Loading HITs]----------
+[2013-04-26 18:56:23] INFO  (LoadHITs.java: 241) -   Total load time: 0 seconds.
+[2013-04-26 18:56:23] INFO  (LoadHITs.java: 243) -   Successfully loaded 4 HITs.
